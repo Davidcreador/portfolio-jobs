@@ -17,8 +17,14 @@ function EpisodeEntry({ episode }) {
             id={`episode-${episode.id}-title`}
             className="mt-2 text-lg font-bold text-slate-900"
           >
-            <a target="_blank" href={`${episode.link}`} rel="noreferrer">{episode.title}</a>
+            {episode.title}
           </h2>
+          <h3
+            id={`episode-${episode.id}-title`}
+            className="mt-2 text-sm font-bold text-slate-900"
+          >
+            <a target="_blank" href={`${episode.link}`} rel="noreferrer">{episode.place}</a>
+          </h3>
           <FormattedDate
             date={episode.date}
             className="order-first font-mono text-sm leading-7 text-slate-500"
